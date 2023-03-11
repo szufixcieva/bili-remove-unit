@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "B站防刷视频",
+  "version": "1.0",
+
+  "description": "删除B站视频的下一条",
+
+  "icons": {
+    "48": "icons/kfc-48.png",
+    "96": "icons/vme50-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.bilibili.com/video/*"],
+      "js": ["kill.js"]
+    }
+  ]
+
+}
