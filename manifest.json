@@ -10,14 +10,18 @@
     "96": "icons/vme50-96.png"
   },
 
+  "background": {
+    "page": "killMethods.js"
+  },
+
   "content_scripts": [
     {
       "matches": ["https://www.bilibili.com/video/*"],
-      "js": ["kill.js"]
+      "js": ["videoPageOperation.js"]
     },
     {
       "matches": ["https://www.bilibili.com/"],
-      "js": ["mainPageOperation.js"],
+      "js": ["killMethods.js","mainPageOperation.js"],
       "css": ["bili-rmu.css"]
     }
   ]
